@@ -1,0 +1,23 @@
+{
+  "name": "assn02",
+  "version": "0.0.0",
+  "description": "Assignment 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "node cli.js -n 35.92 -w 79.05 -z America/New_York"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2023-spring/a02-functions-tianyiniu.git"
+  },
+  "author": "Tianyi Niu",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/comp426-2023-spring/a02-functions-tianyiniu/issues"
+  },
+  "homepage": "https://github.com/comp426-2023-spring/a02-functions-tianyiniu#readme",
+  "bin": {
+    "galosh.js": "./cli.js"
+  },
+  "type": "module"
+}
