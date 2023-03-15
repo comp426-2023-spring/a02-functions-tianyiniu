@@ -18,8 +18,15 @@ const help = args.h;
 const timezone = args.z || moment.tz.guess();
 const lat = args.n || args.s * -1;
 const lg = args.e || args.w * -1;
-const day = args.d || 1;
 const json = args.j;
+var day;
+if (args.d === undefined) {
+	day = 1;
+} else if (args.d === 0) {
+	day = 0;
+} else {
+	day = args.d;
+}
 
 const URL = 'https://api.open-meteo.com/v1/forecast?latitude=' + lat + '&longitude=' + lg + '&daily=precipitation_hours&current_weather=true&timezone=' + timezone;
 const response = await fetch(URL);
