@@ -45,8 +45,10 @@ function weather(data) {
 
 if (help) {
 	console.log(help_str);
+	process.exit(0);
 } else if (json) {
 	console.log(data);
+	process.exit(0);
 } else {
 	weather(data);
 }
